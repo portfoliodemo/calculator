@@ -1,0 +1,147 @@
+
+/* Add Border Box to all elements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Visualize every element with a white box - debugging */
+/* * {
+    outline: 1px solid whitesmoke !important;
+  } */
+
+
+header h1 {
+    text-align: center;
+}
+
+#title h2 {
+    margin: 0;
+    color: darkslategrey;
+}
+
+main {
+    display: grid;
+    padding: 0 8em;
+    grid-template-columns: 1fr;
+}
+
+.calculator {
+    display: grid;
+    grid-template-areas: 
+            "title title title title"
+            "display display display display"
+            "clear clear clear division"
+            "seven eight nine multiplication"
+            "four five six subtraction"
+            "one two three addition"
+            "correction zero decimal equals";
+    border-width: 2em;
+    border-style: groove;
+    border-color: darkslategray;
+    border-radius: 3em;
+    gap: 1em;
+    padding: 0.5em;
+    /* border: 2em thick rgba(0, 0, 0, 0.705); */
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+
+button {
+    font-size: 2em;
+}
+
+#title {
+    grid-area: title;
+    /* justify-self: center; */
+    /* background-color: darkslategray; */
+    padding: 1em;
+    font-size: 2em;
+    font-family: 'Fascinate', cursive;
+    justify-self: stretch;
+    text-align: center;
+
+}
+
+#display {
+    display: grid;
+    grid-area: display;
+    font-size: 4em;
+    justify-self: stretch;
+    text-align: right;
+    padding: 0.125em;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 0.25em;
+    /* border: 0.125em dashed lightslategray; */
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiplication {
+    grid-area: multiplication;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#subtraction {
+    grid-area: subtraction;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#addition {
+    grid-area: addition;
+}
+
+#correction {
+    grid-area: correction;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equals {
+    grid-area: equals;
+}

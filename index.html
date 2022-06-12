@@ -6,15 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator - The Odin Project</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
     <!-- CSS Stylesheet(s) -->
     <link rel="stylesheet" href="./assets/styles/main.css">
 
 </head>
 <body>
     
-    <header>
-        <h1>Calculator</h1>
-    </header>
+    <!-- <header>
+        <h1>The Odin Project - Foundations Final - Calculator</h1>
+    </header> -->
+
+    <!-- Create a grid with 7 rows and four columns -->
+    <main>
+        <div class="calculator">
+
+            <div id="title">
+                <h2>Calculator</h2>
+            </div>
+
+            <div id="display">
+                <!-- Display Value, spanning all four columns -->
+                <!-- Temporary 'dummy' numbers for visual aid -->
+                <span>2022</span>
+            </div>
+
+            <!-- Calculator Buttons -->
+            <button id="clear">CLEAR</button>
+            <button id="division">%</button>            
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="multiplication">*</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="subtraction">-</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="addition">+</button>
+            <button id="correction">X</button>
+            <button id="zero">0</button>
+            <button id="decimal">.</button>
+            <button id="equals">=</button>
+
+        </div>
+    </main>
 
     <script src="./assets/scripts/calculator.js"></script>
 </body>
